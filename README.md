@@ -3,3 +3,4 @@
 - "yarn json" 으로 먼저 json-server 켜주세요.
 - Tanstack Query 의 기본적인 이해도를 확인할 수 있는 리팩터링 문제입니다.
 - 필수구현을 끝낸 뒤 시간이 남는 분들만 선택구현을 시도해 주세요.
+- remote 변경
