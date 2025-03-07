@@ -7,6 +7,8 @@ export default function Detail() {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  //data 가져와서 쿼리파라미터 id에 해당하는 내용을 가져와야함
+
   // TODO: 필수: useQuery 로 리팩터링 하세요.
   // TODO: 선택: useQuery 로 리팩터링 후, useTodoQuery 커스텀훅으로 정리해 보세요.
 

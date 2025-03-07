@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { createTodoData, todoApi } from "../api/todos";
+import { createTodoData } from "../api/todos";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
-export default function TodoForm({ fetchData }) {
+export default function TodoForm() {
   const [title, setTitle] = useState("");
   const [contents, setContents] = useState("");
   // 쿼리 클라이언트 가져오기

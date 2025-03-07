@@ -1,11 +1,10 @@
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import TodoForm from "../components/TodoForm";
 import TodoList from "../components/TodoList";
 import { getTodoData } from "../api/todos";
 
 export default function Home() {
   // TODO: 필수: useQuery 로 리팩터링 하세요.
-  const queryClient = useQueryClient();
 
   const {
     data: todoData,
@@ -16,8 +15,6 @@ export default function Home() {
     queryFn: getTodoData,
     retry: 1,
   });
-  //데이터는 배열로 가져와짐
-  // console.log(todoData);
 
   if (isPending) {
     return <div>로딩중입니다</div>;
